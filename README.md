@@ -30,7 +30,25 @@ Incoming call → AI intake → qualify need → booking / handoff
 
 `TypeScript` · `Supabase` · `Retell AI` · `Twilio` · `Automation workflows`
 
-**[Explore BookedIQ](https://bookediq.net)**
+**[Explore the live BookedIQ website](https://bookediq.net)** · **[Call the published demo line](tel:8436121449)**
+
+<details>
+<summary><b>View the BookedIQ workflow</b></summary>
+
+```mermaid
+flowchart LR
+    A["Incoming call"] --> B["AI receptionist"]
+    B --> C["Structured intake"]
+    C --> D{"Next step"}
+    D --> E["Schedule or route"]
+    D --> F["Human handoff"]
+    E --> G["Summary and follow-up"]
+    F --> G
+```
+
+*Architecture overview, not a screenshot or performance claim.*
+
+</details>
 
 ---
 
@@ -53,6 +71,30 @@ Business profile → Discover → Verify sources → Eligibility & fit
 
 **Status:** Under active development; feature readiness and deployment vary by environment.
 
+<details>
+<summary><b>View the opportunity decision workflow</b></summary>
+
+```mermaid
+flowchart TD
+    A["Business capabilities"] --> B["Opportunity discovery"]
+    B --> C["Source verification"]
+    C --> D{"Eligibility gates"}
+    D -->|Not eligible| E["Pass / prepare"]
+    D -->|Eligible| F["Fit and pursuit economics"]
+    F --> G{"Human decision"}
+    G --> H["Prime"]
+    G --> I["Subcontract"]
+    G --> J["Watch"]
+    G --> K["Pass"]
+    H --> L["Pursuit workspace"]
+    I --> L
+    L --> M["Human submission approval"]
+```
+
+*Conceptual product flow. Not a claim that every stage is live in production.*
+
+</details>
+
 `React` · `TypeScript` · `Vite` · `Express` · `Supabase` · `Capacitor`
 
 ---
@@ -71,6 +113,24 @@ Script → Quality checks → Render video → Verify output
 **Built in the repository:** an FFmpeg-based 1080×1920 rendering path, artifact and quality verification, publishing packs, and a Cloudflare-backed review workflow. The design includes publishing safeguards and manual fallback instructions.
 
 **Current limitation:** production reliability, runner availability, and YouTube publishing access are not established as fully operational. This is not presented as an autonomous publishing service.
+
+<details>
+<summary><b>View the production and approval gates</b></summary>
+
+```mermaid
+flowchart LR
+    A["Script"] --> B["Quality check"]
+    B --> C["Render"]
+    C --> D["Artifact verification"]
+    D --> E["Review queue"]
+    E --> F{"Approved?"}
+    F -->|No| G["Hold"]
+    F -->|Yes| H["Publishing path, if available"]
+```
+
+*Pipeline design, not proof of successful public uploads.*
+
+</details>
 
 `Python` · `FFmpeg` · `GitHub Actions` · `Cloudflare Workers`
 
