@@ -1,83 +1,135 @@
 <div align="center">
 
-![Kaedin Grissom](https://capsule-render.vercel.app/api?type=rounded&color=0:0B1220,100:17365D&height=170&section=header&text=Kaedin%20Grissom&fontSize=58&fontColor=FFFFFF&fontAlignY=43&desc=Founder%20%7C%20AI%20Systems%20Builder&descSize=18&descAlignY=67)
+![Kaedin Grissom](https://capsule-render.vercel.app/api?type=rounded&color=0:0B1220,100:1D4ED8&height=170&section=header&text=Kaedin%20Grissom&fontSize=58&fontColor=FFFFFF&fontAlignY=42&desc=Founder%20%7C%20AI%20Product%20Builder&descSize=19&descAlignY=67)
 
-**Building practical AI tools for businesses and everyday people.**
+**I turn complicated business workflows into practical AI products.**
 
-[![BookedIQ](https://img.shields.io/badge/BookedIQ-Visit%20Website-2563EB?style=flat-square)](https://bookediq.net)
-[![Demo line](https://img.shields.io/badge/AI%20Receptionist-843--612--1449-0F172A?style=flat-square)](tel:8436121449)
+Building in customer operations, federal contracting, and human-supervised automation.
 
-![U.S. trademark owner](https://img.shields.io/badge/U.S.%20Trademark-Owner-2563EB?style=flat-square&labelColor=0F172A)
+[![BookedIQ](https://img.shields.io/badge/BookedIQ-Live%20website-2563EB?style=flat-square)](https://bookediq.net)
+[![Demo line](https://img.shields.io/badge/Receptionist%20demo-843--612--1449-334155?style=flat-square)](tel:8436121449)
+![U.S. trademark owner](https://img.shields.io/badge/U.S.%20trademark-owner-2563EB?style=flat-square)
 
 </div>
 
-## About
+## Selected work
 
-```python
-kaedin = {
-    "role": "Founder | AI systems builder",
-    "company": "BookedIQ",
-    "focus": ["AI reception", "small business automation", "government contracting access"],
-    "building": ["BookedIQ", "Economic Opportunity Engine", "Sillyclipz", "AI Pod Shop"],
-    "principle": "Evidence first. Unknowns stay unknown.",
-    "mission": "Make powerful technology useful to everyday people."
-}
+### 01 / [BookedIQ](https://bookediq.net) — AI reception & business operations
+**Live business platform · Founder / product direction / workflow design**
+
+An AI receptionist and operations layer for service businesses. The goal isn't just to answer calls; it's to help a business respond to inquiries and follow through without replacing its existing tools.
+
+```text
+Incoming call → AI intake → qualify need → booking / handoff
+                                      └→ summary + follow-up
 ```
 
-## Journey
+**What I've built and integrated:** conversational call handling, structured lead capture, scheduling workflows, follow-up automation, and integrations across telephony, AI voice, and business tools.
 
-<details>
-<summary><b>Open the short version</b></summary>
+**Engineering focus:** reliable handoffs, explicit guardrails, tenant-aware workflows, and operational visibility.
 
-| When | Milestone |
+`TypeScript` · `Supabase` · `Retell AI` · `Twilio` · `Automation workflows`
+
+**[Explore BookedIQ](https://bookediq.net)**
+
+---
+
+### 02 / Economic Opportunity Engine — Federal contracting decision support
+**Active development · Product concept, architecture & implementation**
+
+A decision and pursuit system for small government contractors. Instead of flooding users with listings, it helps answer a harder question: **Is this opportunity worth pursuing?**
+
+```text
+Business profile → Discover → Verify sources → Eligibility & fit
+                                                ↓
+                              Prime / Sub / Watch / Pass
+                                                ↓
+                              Pursuit workspace → Human approval
+```
+
+**Implemented or documented product capabilities:** opportunity discovery through SAM.gov when configured, USAspending historical-award research, source-backed fit analysis, eligibility gates, organization-scoped workspaces, compliance matrices, amendment tracking, and proposal preparation workflows.
+
+**What makes the design different:** verified facts, user-provided facts, AI inferences, and unknowns are kept distinct. A high fit score cannot override a disqualifying requirement. The system does **not** automatically submit bids.
+
+**Status:** Under active development; feature readiness and deployment vary by environment.
+
+`React` · `TypeScript` · `Vite` · `Express` · `Supabase` · `Capacitor`
+
+---
+
+### 03 / Sillyclipz — Automated short-form video pipeline
+**Experimental · Rendering and review workflow**
+
+A programmatic system for creating short-form video drafts with quality checks and an approval gate before publication.
+
+```text
+Script → Quality checks → Render video → Verify output
+                                              ↓
+                                     Review → Approval → Publish
+```
+
+**Built in the repository:** an FFmpeg-based 1080×1920 rendering path, artifact and quality verification, publishing packs, and a Cloudflare-backed review workflow. The design includes publishing safeguards and manual fallback instructions.
+
+**Current limitation:** production reliability, runner availability, and YouTube publishing access are not established as fully operational. This is not presented as an autonomous publishing service.
+
+`Python` · `FFmpeg` · `GitHub Actions` · `Cloudflare Workers`
+
+---
+
+### 04 / AI Pod Shop — AI-assisted commerce operations
+**Pre-launch experiment**
+
+An approval-first print-on-demand workflow: niche research, design planning, listing preparation, and reporting. The repository includes a research shortlist, compliance checklist, and a trends-scanning script. **No published store or sales performance is claimed.**
+
+`Python` · `Research automation` · `Human approval`
+
+## What I contribute
+
+| Product & operations | Technical implementation |
 | --- | --- |
-| 2025–2026 | Built BookedIQ around a practical problem: helping businesses handle calls without losing time or opportunities. |
-| May 2026 | Reached a U.S. trademark milestone for BookedIQ. |
-| 2026 | Expanded into AI reception, lead capture, and follow-up workflows. |
-| 2026 | Started Economic Opportunity Engine to make federal contracting decisions easier to navigate. |
-| Nov 2026 | Merged improvements to an experimental short-form video production pipeline. |
-| Now | Building practical AI products with clear safeguards and measurable value. |
+| Identify high-friction workflows and define the outcome | Design AI-assisted intake, automation, and integrations |
+| Translate business requirements into usable product flows | Work across React/TypeScript, APIs, Supabase, and Cloudflare |
+| Define risk boundaries and human approval points | Test workflows, review failures, and iterate on system behavior |
+| Make product and prioritization decisions | Coordinate AI-assisted development and implementation |
 
-</details>
-
-## Experience
-
-| Role | Work |
-| --- | --- |
-| **Founder — [BookedIQ](https://bookediq.net)** | AI reception and workflow automation for service businesses, including inquiry capture, scheduling support, and follow-up. |
-| **Builder — Economic Opportunity Engine** | Decision-support software for discovering and evaluating federal contracting opportunities. |
-| **Independent AI product builder** | Experiments in programmatic video, commerce automation, and human-supervised workflows. |
-
-## Projects
-
-| | |
-| --- | --- |
-| **[BookedIQ](https://bookediq.net)**<br>**Live business platform**<br><br>AI reception and follow-through for service businesses: answering inquiries, capturing leads, and supporting bookings.<br><br>`TypeScript` `Supabase` `Retell` `Edge Functions` | **Economic Opportunity Engine**<br>**In active development**<br><br>Discover federal opportunities, evaluate fit with available evidence, and decide whether to pursue as prime, subcontract, watch, or pass. No autonomous bid submission.<br><br>`TypeScript` `React` `Supabase` `Capacitor` |
-| **Sillyclipz**<br>**Experimental pipeline**<br><br>Programmatic short-form video creation with quality checks and approval-gated publishing. Production readiness and operating costs are still being evaluated.<br><br>`Python` `FFmpeg` `Cloudflare Workers` | **AI Pod Shop**<br>**Pre-launch experiment**<br><br>Exploring AI-assisted print-on-demand and commerce workflows.<br><br>`Python` |
+I use AI development tools as part of my workflow. My focus is on **problem selection, system design, integration, testing, and delivering a usable result**—not claiming every line of code was written manually.
 
 ## Tools & technologies
 
 <div align="center">
 
-![Technology stack](https://skillicons.dev/icons?i=py,ts,js,html,react,vite,nodejs,supabase,cloudflare,git,github,vscode&perline=12&theme=light)
+![Technology stack](https://skillicons.dev/icons?i=ts,js,py,react,vite,nodejs,supabase,cloudflare,git,github,vscode&perline=11&theme=light)
 
-`FFmpeg` · `Retell AI` · `Capacitor` · `Express` · `GitHub Actions`
+`Retell AI` · `Twilio` · `FFmpeg` · `Express` · `Capacitor` · `GitHub Actions`
 
 </div>
 
-## Principles
+## The approach
 
-- **Problem first:** Build around a measurable need.
-- **Evidence over guesses:** Make uncertainty visible instead of inventing certainty.
-- **Human accountability:** Keep meaningful oversight where decisions matter.
-- **Simple for the user:** Prioritize clarity, reliability, and useful outcomes.
+**Problem → Workflow → Prototype → Safeguards → Test → Improve**
+
+I started building BookedIQ to solve a practical problem: missed calls taking time away from someone I cared about. That same principle guides my other work: start with a real constraint, make the system useful, and keep claims grounded in evidence.
+
+<details>
+<summary><b>Milestones</b></summary>
+
+| When | Milestone |
+| --- | --- |
+| 2025–2026 | Developed BookedIQ from a practical reception use case into a broader automation platform |
+| May 2026 | BookedIQ U.S. trademark milestone |
+| 2026 | Began building Economic Opportunity Engine |
+| Nov 2026 | Merged short-form video rendering and publishing-safeguard improvements |
+
+</details>
+
+---
 
 <div align="center">
 
-**Building in AI automation or government contracting? Let's connect.**
+**Interested in practical AI systems, small business operations, or federal contracting?**
 
 [![Explore BookedIQ](https://img.shields.io/badge/Explore-BookedIQ-2563EB?style=flat-square)](https://bookediq.net)
 
-
+<sub>Evidence first. Build what matters.</sub>
 
 </div>
